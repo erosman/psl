@@ -4,12 +4,11 @@ export class PSL {
 
   static parse(hostname) {
     const parts = hostname.split('.');
-    // default for 2 part hostname
     const obj = {
       subdomain: '',                                        // parts before sld
       domain: hostname,                                     // sld + tld
       sld: parts[0],                                        // Second level domain
-      tld: parts[1]                                         // Top level domain
+      tld: parts[parts.length-1]                            // Top level domain
     }
 
     if (parts.length > 2) {
