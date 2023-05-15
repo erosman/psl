@@ -9,7 +9,7 @@ See https://publicsuffix.org/ and the [Wiki](https://github.com/publicsuffix/lis
 
 ## How to Use
 
-Include `psl.js` as a module and `import` for use.
+Include `psl.js` as a module and `import` to use.
 
 `parse()` returns an `Object` with the following properties:
 
