@@ -14,8 +14,8 @@ Include `psl.js` as a module and `import` for use.
 `parse()` returns an `Object` with the following properties:
 
 - **subdomain**: `string` parts before the domain
-- **domain**: `string` domain name i.e. sld + tld
-- **sld**: `string` Second level domain (domain without tld)
+- **domain**: `string` domain name (i.e. sld + tld)
+- **sld**: `string` Second level domain (i.e. domain without tld)
 - **tld**: `string` Top level domain (i.e. The Public Suffix)
 
 
