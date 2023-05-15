@@ -24,21 +24,21 @@ Include `psl.js` as a module and `import` to use.
 import {PSL} from './psl.js';
 
 
-// domain without subdomain
+// hostname without subdomain
 const psl1 = PSL.parse('example.com');
 console.log(psl1.subdomain);    // ''
 console.log(psl1.domain);       // 'example.com'
 console.log(psl1.sld);          // 'example'
 console.log(psl1.tld);          // 'com'
 
-// domain with subdomain
+// hostname with subdomain
 const psl2 = PSL.parse('www.example.com');
 console.log(psl2.subdomain);    // 'www'
 console.log(psl2.domain);       // 'example.com'
 console.log(psl2.sld);          // 'example'
 console.log(psl2.tld);          // 'com'
 
-// domain with nested subdomains
+// hostname with nested subdomains
 const psl3 = PSL.parse('a.b.c.example.com');
 console.log(psl3.subdomain);    // 'a.b.c'
 console.log(psl3.domain);       // 'example.com'
