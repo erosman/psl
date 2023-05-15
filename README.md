@@ -40,8 +40,8 @@ console.log(psl2.tld);          // 'com'
 
 // domain with nested subdomains
 const psl3 = PSL.parse('a.b.c.example.com');
-console.log(psl3.tld);          // 'com'
+console.log(psl3.subdomain);    // 'a.b.c'
 console.log(psl3.domain);       // 'example.com'
 console.log(psl3.sld);          // 'example'
-console.log(psl3.subdomain);    // 'a.b.c'
+console.log(psl3.tld);          // 'com'
 ```
