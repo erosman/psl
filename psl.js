@@ -13,6 +13,7 @@ export class PSL {
 
     if (parts.length > 2) {
       let i = 0;
+      parts[0] === 'www' && i++;                            // skip www
       for (; i < parts.length-2; i++) {
         if (list.includes(` ${parts.slice(i+1).join('.')} `)) { break; } // found tld
       }
